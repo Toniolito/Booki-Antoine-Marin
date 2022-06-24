@@ -1,0 +1,104 @@
+//Déclaration initiale
+
+.box {
+   box-sizing: border-box; /* Opera/IE 8+ */
+/* box-sizing est appliqué seulement à cette classe */
+}
+
+* {
+ box-sizing: border-box;
+/* box-sizing est appliqué à tous les éléments */
+}
+
+//Snippet pour les préfixes de box-sizing
+
+.box {
+   box-sizing: border-box; /* Opera/IE 8+ */
+   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 5%;
+}
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+   
+}
+
+nav li
+{
+    margin-right: 30px;  
+}
+
+/*Impossible d'avoir le hover à la même hauteur à part en .em */
+nav a:hover
+{
+    border-top: 2px solid #0065FC;
+    
+}
+
+a:link 
+{ 
+ text-decoration:none; 
+ color:black ;
+} 
+
+#logo img
+{
+    width: 40%;
+    height: 40%; 
+}
+
+/* Règles CSS pour mobiles */
+
+@media screen and (max-width: 768px) 
+
+{
+    header
+
+    {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(16, 36, 253);
+    }
+
+    #logo
+
+    {
+        display :flex;
+        justify-content: center;
+        background-color: red;
+    }
+
+    nav
+
+    {
+        background-color: aqua;
+        display: flex;
+        flex-grow: 1;
+       
+    }
+
+
+    nav a:hover
+    {
+    border-color: #0065FC;
+    border-bottom: 0em;
+
+    }
+ 
+
+}
+
