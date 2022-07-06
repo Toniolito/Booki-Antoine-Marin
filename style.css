@@ -20,33 +20,53 @@
 body
 {
     font-family: 'Raleway', sans-serif;
+    padding-left: 5%;
 }
 
 header
 {
+    display: flex; 
+}
+
+nav
+{
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    flex: 1;
+}
+
+#logo
+
+{
+    display: flex;
+    flex: 1;
     padding-top: 5%;
+}
+
+#logo img
+
+{
+    display: flex;
+    height: 35%;
 }
 
 nav ul
 {
     display: flex;
+    justify-content: space-evenly;
     list-style-type: none;
-   
+    flex: 1
 }
 
 nav li
 {
-    margin-right: 30px;  
+     display: flex;
+     padding: 10%;
+     
 }
 
-/*Impossible d'avoir le hover à la même hauteur à part en .em */
-nav a:hover
+nav li:hover
 {
     border-top: 2px solid #0065FC;
-    
 }
 
 a:link 
@@ -55,13 +75,98 @@ a:link
  color:black ;
 } 
 
-#logo img
+/* Partie Formulaire de recherche*/
+
+#search
 {
-    width: 40%;
-    height: 40%; 
+    padding-top: 0%;
 }
 
-/* Règles CSS pour mobiles */
+h2
+{
+    font-family: "Raleway";
+    font-weight:lighter;
+}
+
+#search
+
+{
+    
+}
+
+#form
+{
+    position: relative;
+    width: 20%;
+    height: 50%;
+}
+
+
+#location
+{
+    width: 396px;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #F2F2F2;
+ 
+}
+
+#searchbar
+{
+    font-family: "Raleway";
+    font-weight: 700 ;
+    padding: 12px 20px 4px 2px;
+    margin-left: 40px;
+    
+   
+}
+
+#location i
+{
+    position: absolute;
+    top:50%;
+    left: 5%;
+
+}
+
+#button
+{
+    position: relative;
+    left: -2%;
+    bottom : 10%;
+    width: 35%;
+    height:100%;
+    background-color:#0065FC;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Règles CSS pour Mobiles */
 
 @media screen and (max-width: 768px) 
 
@@ -71,32 +176,55 @@ a:link
     {
         display: flex;
         flex-wrap: wrap;
-        background-color: rgb(16, 36, 253);
     }
 
+    /* Je ne parviens pas à enlever la marge en haut sans casser le reste*/ 
+    
     #logo
-    {
+    { 
         display :flex;
         justify-content: center;
+        align-items: flex-end;
+        background-color: rgb(2, 29, 54);
+        flex: 1;
+    }
+
+    #logo img
+
+    {
         background-color: red;
+        display: flex;
+     
     }
 
     nav
     {
-        background-color: aqua;
         display: flex;
-        flex-grow: 1;
+        flex-wrap: wrap;
+        flex: 2;
+    
+        border-bottom: 8px gray;
+    }
+
+
+    nav li 
+
+    {
+        background-color: coral;
+        display: flex;
+        align-items: flex-start;
+     
+    }
+
+    /* pourquoi le hover reste actif en haut ? */ 
+
+    nav li:hover
+
+    {
+        border-bottom: 5px #0065FC ;
        
     }
-
-
-    nav a:hover
-    {
-    border-color: #0065FC;
-    border-bottom: 0em;
-
-    }
- 
-
+    
 }
+
 
