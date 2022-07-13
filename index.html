@@ -13,7 +13,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
         </style>  
-        <script src="https://kit.fontawesome.com/fa33ef49ff.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fa33ef49ff.js" crossorigin="anonymous"></script>
 
 <!--Ceci est le header-->
 
@@ -22,10 +22,10 @@
     <body>
         <header>
             <div id="logo">
-                <img src="images/logo/Booki@3x.png" alt="logo Booki"> <a href="#"></a>
+                <img src="images/logo/Booki@3x.png" alt="logo Booki" width="80px" height="50px"> <a href="#"></a>
             </div>
 
-            <nav id="menu">
+            <nav id="header-navigation">
                     <ul>
                         <li> <a href="#" > Hébergements</a></li>
                         <li> <a href="#" > Activités</a> </li>
@@ -33,25 +33,189 @@
             </nav>
         </header>
 
-        <div id="search">
-
-            <h1>
-                Trouvez votre hébergement pour des vacances de rêve
-            </h1>
+                <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
                 <h2> En plein centre ville ou en pleine nature</h2>
            
-                <form id="form" method="post" action=" traitement.php">
+        <div class="search">
+            <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <input type="text" value="Marseille, France" />
+            <button>
+                 <Rechercher> 
+                </button>
+    </div>
 
-                    <div id="location">  
-                        <i  class="fa-solid fa-location-dot fa-xl"> </i> 
-                        <input id="searchbar" type="text" value= "Marseille, France" name="search">
-                        <input id="button" type="submit" value="Rechercher" /> 
-                     </div>
-               
-                       
-            </form>
-        
+    <div id="filter"> 
+       
+        <h2> Filtres</h2>
+
+        <div id="money"> 
+            <div class="circle">
+                <i class="fa-solid fa-money-bill-wave fa-xl"></i>
+            </div>
+            <button> Economique</button>
         </div>
+
+
+        <div id="family"> 
+            <div class="circle" >
+                <i class="fa-solid fa-child-reaching fa-xl"></i>
+            </div>
+            <button> Famillial</button>
+        </div>
+
+         <div id="love">  
+            <div class="circle">
+                <i class="fa-solid fa-heart fa-xl"></i>
+            </div>
+            <button> Romantique</button>
+
+        </div>
+
+        <div id="pet">  
+            <div class="circle" >
+                <i class="fa-solid fa-dog fa-xl"></i>
+            </div>
+            <button> Animaux autorisés</button>
+        </div>
+    </div>
+
+    <div id="information">
+        <i class="fa-solid fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    
+    </div>
+ 
+    <div id="article">
+        <h2>Hebergements à Marseille</h2>
+        
+        <div class="card">
+
+            <div class="card-image">
+            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+            </div>
+
+            <div class="card-body">
+                Auberge de la Canebière
+            </div>
+            <div class="price">
+                <p>Nuit à partir de <b> 25€ </b></p>
+            </div>
+            <div class="rating">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+
+            <div class="card-image">
+                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                </div>
+        
+                <div class="card-body">
+                    Hôtel du port
+                </div>
+                <div class="price">
+                    <p>Nuit à partir de <b> 25€ </b></p>
+                </div>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="card-image">
+                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                    </div>
+            
+                    <div class="card-body">
+                    Hôtel Les mouettes
+                    </div>
+                    <div class="price">
+                        <p>Nuit à partir de <b> 25€ </b></p>
+                    </div>
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="card-image">
+                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                        </div>
+                
+                        <div class="card-body">
+                            Hôtel de la mer
+                        </div>
+                        <div class="price">
+                            <p>Nuit à partir de <b> 25€ </b></p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="card-image">
+                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                            </div>
+                    
+                            <div class="card-body">
+                                Auberge Le Panier
+                            </div>
+                            <div class="price">
+                                <p>Nuit à partir de <b> 25€ </b></p>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                                </div>
+                        
+                                <div class="card-body">
+                                    Hôtel du chez Amina
+                                </div>
+                                <div class="price">
+                                    <p>Nuit à partir de <b> 25€ </b></p>
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>            
+        </div>
+</section>
+
+<aside id="aside">
+    <h2>Les plus populaires</h2>
+</aside>
+    
         
     </body>
 

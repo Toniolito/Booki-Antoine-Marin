@@ -17,152 +17,275 @@
    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
 }
-body
-{
+
+html, body, header{
+    margin-left : 20px;
+    padding: 0;
+  }
+
+body{
     font-family: 'Raleway', sans-serif;
-    padding-left: 5%;
 }
 
-header
-{
-    display: flex; 
+h2{
+
+    font-size: medium;
 }
 
-nav
-{
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header #logo{
+    background-color: rebeccapurple;
+    padding-left :20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header nav{
+    background-color: aqua;
     display: flex;
     flex: 1;
+    justify-content:flex-end;
+    padding-right: 15px;
 }
 
-#logo
-
-{
+header nav ul{
+    background-color: green;
     display: flex;
-    flex: 1;
-    padding-top: 5%;
-}
-
-#logo img
-
-{
-    display: flex;
-    height: 35%;
-}
-
-nav ul
-{
-    display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
     list-style-type: none;
+    
+}
+
+header nav li {
+    background-color: red;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header nav li:hover{
+    border-top: 2px solid blue ;
+}
+
+/* Formulaire de recherche*/
+
+/* Marge à droite ?*/ 
+.search{
+
+    width:380px;
+    height:50px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center; 
+    margin-top:50px;
+}
+
+
+.search .icon{
+    height:100%;
+   background-color: #F2F2F2;
+   width:40px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius:10px;
+ }
+
+ .search input{
+    height:100%;
+    border:0;
+    flex: 1;  
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-left:10px;
+    font-weight: bold;
+  }
+
+  .search button{
+    background-color:#0065FC;
+    border:0;
+    height:100%;
+    color:#fff;
+    padding-left:10px;
+    padding-right:10px;
+    font-weight:550;
+    font-size:.9em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+  }
+  
+
+/*Filtres*/
+
+#filter h2
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+   color:#0065FC;
+}
+
+#filter{
+    padding-top:20px;
+    width: 80%;
+    height: 100px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.circle{
+    width:50px;
+    height:50px;
+    background: #DEEBFF;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  #filter button {
+      height: 45px;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-color: #F2F2F2;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius:25px;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-left: -15px;
+      z-index: -1;
+      background-color: #fff;
+      font-weight: 700;
+  }
+
+
+#money
+{
+    height: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    z-index: -1;   
+}
+
+#family{
+    
+    height: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    z-index: -1;   
+}
+
+
+#love
+{
+    height: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    z-index: -1;   
+}
+
+#pet{
+    height: 100%;
+    width: 180px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center; 
+}
+
+#information{
+
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+
+}
+
+#information i{
+    width:25px;
+    height:25px;
+    background-color: white;
+    border-style:solid;
+    border-radius: 50%;
+    border-color: #F2F2F2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   margin-right: 10px;
+}
+
+/* Hébergements*/
+
+#article {
+    background-color:red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     flex: 1
 }
 
-nav li
-{
-     display: flex;
-     padding: 10%;
-     
-}
-
-nav li:hover
-{
-    border-top: 2px solid #0065FC;
-}
-
-a:link 
-{ 
- text-decoration:none; 
- color:black ;
-} 
-
-/* Partie Formulaire de recherche*/
-
-#search
-{
-    padding-top: 0%;
-}
-
-h2
-{
-    font-family: "Raleway";
-    font-weight:lighter;
-}
-
-#search
-
-{
-    
-}
-
-#form
-{
-    position: relative;
-    width: 20%;
-    height: 50%;
-}
-
-
-#location
-{
-    width: 396px;
-    height: 40px;
-    border: solid 1px;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #F2F2F2;
+#aside{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
  
 }
 
-#searchbar
-{
-    font-family: "Raleway";
-    font-weight: 700 ;
-    padding: 12px 20px 4px 2px;
-    margin-left: 40px;
+
+/*Carte*/
+
+.card{
     
-   
+    width: 280px;
+    height: 230px;
+    padding-left: 5px;
+    border: solid 3px blue;
+    border-radius: 10%;
+    background-color:#fff;
+    
+}
+.card-image img{
+    width: 260px;
+    height: 130px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    padding-top: 5px;
+    object-fit: cover;
 }
 
-#location i
-{
-    position: absolute;
-    top:50%;
-    left: 5%;
-
+.card-body{
+    
+    font-weight: 700;
 }
-
-#button
-{
-    position: relative;
-    left: -2%;
-    bottom : 10%;
-    width: 35%;
-    height:100%;
-    background-color:#0065FC;
-    border-radius: 10px 10px 10px 10px;
-    z-index: 1;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -171,60 +294,69 @@ h2
 @media screen and (max-width: 768px) 
 
 {
-    header
 
-    {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* Je ne parviens pas à enlever la marge en haut sans casser le reste*/ 
-    
-    #logo
-    { 
-        display :flex;
-        justify-content: center;
-        align-items: flex-end;
-        background-color: rgb(2, 29, 54);
-        flex: 1;
-    }
-
-    #logo img
-
-    {
+    header{
+        height: 150px;
         background-color: red;
-        display: flex;
-     
-    }
-
-    nav
-    {
-        display: flex;
-        flex-wrap: wrap;
-        flex: 2;
-    
-        border-bottom: 8px gray;
-    }
-
-
-    nav li 
-
-    {
-        background-color: coral;
-        display: flex;
-        align-items: flex-start;
-     
-    }
-
-    /* pourquoi le hover reste actif en haut ? */ 
-
-    nav li:hover
-
-    {
-        border-bottom: 5px #0065FC ;
-       
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
     }
     
+    header #logo{
+        width: 180px;
+        height: 100px;
+        margin-left: 20px;
+    }
+    
+    header nav {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: yellow;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        height: 100%;
+    }
+    
+    header nav li{
+        background-color: green;
+        padding-left: 40px;
+        padding-right: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 250px;
+        border-bottom: 2px solid transparent;
+        box-sizing: border-box;
+        cursor:pointer;
+    }
+    
+    header nav li:hover {
+        border-bottom: 2px solid blue;
+    }
+    
+/*search bar*/
+
+
+/*Filter*/
+
+#filter {
+    display: flex;
 }
 
+
+}
 
