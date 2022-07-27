@@ -25,20 +25,20 @@ html, body, header{
 
 #container{
   margin-left: 20px;
-  }
-
+}
 
 body{
     font-family: 'Raleway', sans-serif;
 }
+
 a{
     text-decoration: none;
+    color: black;
 }
 
 h2{
-    
-    font-weight: 100;
-    font-size: medium;
+    font-weight: 700;
+    font-size: large;
 }
 
 header{
@@ -58,7 +58,7 @@ header nav{
     display: flex;
     flex: 1;
     justify-content:flex-end;
-    padding-right: 15px;
+
 }
 
 header nav ul{
@@ -72,6 +72,7 @@ header nav li{
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
+    flex: 1;
     align-items: center;
     border-top: 1px transparent; 
 }
@@ -148,13 +149,12 @@ i{
     margin-top:20px;
     width: 70%;
     height: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5px;
-
 }
+
 
 .circle{
     width:50px;
@@ -172,7 +172,7 @@ i{
       display: flex;
       align-items: center;
       justify-content: center;
-      border-color: #F2F2F2;
+      border: solid 1px #F2F2F2;
       border-top-right-radius: 25px;
       border-bottom-right-radius:25px;
       padding-left: 25px;
@@ -191,7 +191,6 @@ i{
     flex: 1;
     justify-content: center;
     align-items: center;
-  
 }
 
 #family{
@@ -203,15 +202,12 @@ i{
     align-items: center;  
 }
 
-
-#love
-{
+#love{
     height: 100%;
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
-    
 }
 
 #pet{
@@ -228,7 +224,6 @@ i{
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
-
 }
 
 #information i{
@@ -241,20 +236,18 @@ i{
     display:flex;
     justify-content:center;
     align-items:center;
-   margin-right: 10px;
+    margin-right: 10px;
 }
 
 /* Hébergements*/
 
 section {
-    
     display: flex;
     flex-direction: row;
     gap :40px;
 }
 
 #accomodation {
-    
     flex: 2;
     padding :25px;
     background-color: #F2F2F2;
@@ -269,7 +262,7 @@ section {
 #accomodation .cards {
     display:flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
     row-gap: 20px;
 }
 
@@ -278,8 +271,8 @@ section {
 }
 
 #accomodation h2{
-    font-size: large;
-    padding-top: 10px;
+    font-weight: 700;
+    font-size:x-large;
 }
 
 /*Cartes*/
@@ -336,8 +329,7 @@ section {
  }
 
 
- #aside-title
-{
+ #aside-title{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -351,45 +343,54 @@ section {
     font-size:x-large;
  }
 
-#popular 
-{
+#popular {
     display: flex;
     flex-direction: column;
     row-gap: 30px; 
     border-radius: 20px;
-    padding: 25px;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background-color: #0065FC;
 }
 
-#popular .card
-{
+
+
+#popular .card{
    width: 100%;
    height : 100%; 
    display: flex;
    flex-direction: row;
-   max-width: 300px;
+   max-width: 400px;
    min-width: 250px;
+   max-height: 200px;
+   background-color: red;
 }
 
-#popular .card .infos
-{
+#popular .card .infos{
     display: flex;
     flex-direction: column;
-    flex: 2;
-}
-#popular .card-image{
-    display: flex;
     flex: 1;
-    object-fit: cover;
-    height: 100%;
-    
 }
 
-#popular .card-image img { 
+#popular .card .rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+}
+
+#popular .card img {
+  
+    height: 100%;
+    width: 120px;
+    object-fit: cover;
+    height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    max-height: 100px;
-    width: 100%;
-    object-fit: cover;
+    background-color: blueviolet;
+    
 }
 
 
@@ -406,39 +407,59 @@ section {
     width: 100%;
 }
 
-
 .port{
-    background-color: red;
+
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex: 25%;
     height: 100%;
     border-radius: 20px;
+    border: solid 1px grey;
+    background-color:#fff;
+    box-sizing: border-box;
+    border: solid 1px #F2F2F2;
 }
 
-#col_1
-{
+#col_1{
     display: flex;
     flex: 25%;
     flex-direction: column;
     gap: 20px;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
 }
+
 
 .pomegues{
-    background-color: #0065FC;
-    height: 50%;
+    display: flex;
+    flex: 1;
+    border-radius: 20px;
+    border: solid 1px #F2F2F2;
+    overflow: hidden;
+    flex-direction: column;
 }
 
-
 .frioul{
-    background-color: yellow;
-    height: 50%;
+    display: flex;
+    flex: 1;
+    border-radius: 20px;
+    border: solid 1px #F2F2F2;
+    overflow: hidden;
+    flex-direction: column;
 }
 
 .calanques {
-    background-color: green;
-    height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex: 25%;
+    height: 100%;
+    border-radius: 20px;
+    border: solid 1px #F2F2F2;
+    background-color:#fff;
+    box-sizing: border-box;
 }
 
 #col_2{
@@ -446,18 +467,53 @@ section {
     flex: 25%;
     flex-direction: column;
     gap: 20px;
-
-
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    a
 }
 
 .dame{
-    background-color: goldenrod;
-    height: 50%;
+    display: flex;
+    flex: 1;
+    border-radius: 20px;
+    border: solid 1px #F2F2F2;
+    overflow: hidden;
+    flex-direction: column;
 }
 
 .parc{
-    background-color: rgb(255, 111, 0);
-    height: 50%;
+    display: flex;
+    flex: 1;
+    border-radius: 20px;
+    border: solid 1px #F2F2F2;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* Cartes activités*/
+
+.card-image_2{
+    min-width: 0;
+    min-height: 0;
+    flex: 1;
+    object-fit: cover;
+}
+
+.card-image_2 img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    object-fit: cover;
+    background-color: aqua;
+}
+.card-info_2 {
+    width: 100%;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   padding-left: 10px;
 }
 
 
@@ -465,7 +521,58 @@ section {
 
 footer{
     margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
 }
+
+#about{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#our_accomodations
+{
+    
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#assistance {
+    
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -474,6 +581,18 @@ footer{
 @media screen and (max-width: 768px) 
 
 {
+    #container {
+        margin: 0px;
+    }
+
+    #container h1{
+        margin-left: 20px;
+    }
+
+    #container p {
+        margin-left: 20px;
+    }
+
     header{
         height: 150px;
         display: flex; 
@@ -481,16 +600,19 @@ footer{
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        background-color: aquamarine;
-    }
+}
     
     header #logo{
-        width: 180px;
+        width: 100%;
         height: 100px;
-        margin-left: 20px;
-        background-color: purple;
-        flex: 1;
-        }
+        background-color: greenyellow;
+       
+    }
+
+    header #logo img{
+        background-color: red;
+      
+    }
     
     header nav {
         flex: 1;
@@ -499,7 +621,8 @@ footer{
         justify-content: flex-start;
         height: 100%;
         width: 100%;
-        background-color: red;
+        background-color: aqua;
+    
     }
 
     header nav ul {
@@ -521,16 +644,21 @@ footer{
         border-bottom: 2px solid transparent;
         box-sizing: border-box;
         cursor:pointer;
-        background-color: #0065FC;
+        border-bottom: solid 2px #F2F2F2;
     }
     
     header nav li:hover {
         border-bottom: 2px solid blue;
-      
+        border-top-style :none;
     }
     
 /*search bar*/
 
+.search
+{
+    margin-left: 20px;
+
+}
 .search i {
     display: flex;
     justify-content: center;
@@ -538,16 +666,19 @@ footer{
 }
 
 .search button {
-
     width:50px;
     border-radius: 10px;
 }
+
 .search button p {
     display: none;
 }
 
-
 /*Filter*/
+
+#filter {
+    margin-left: 20px;
+}
 
 #filter-type {
     width: 100%;
@@ -556,8 +687,12 @@ footer{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+    
 }
 
+#information {
+    margin-left: 20px;
+}
 
 /*Section hébergements et les plus populaires*/
 
@@ -569,31 +704,78 @@ section {
 #aside {
   border-radius: 0px;
    padding: 10px;
-   background-color: #0065FC;
-   display: flex;
-   flex: 1;
-   flex-direction: column;
-   align-items: flex-start;
-   width: ;
+   width: 100%;
+
 }
 #popular {
    row-gap: 10px;
-   background-color: chartreuse;
+   width: 100%;
+}
+#popular .card{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+
+#popular .infos{
+    background-color: yellow; 
+}
+
+#popular .card-image{
+    background-color: green;
+
+}
+
+#aside i {
+    color: black;
 }
 
 #accomodation{
     background :none;
-    background-color :red;
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: flex-start;
- 
-    
 }
 
-#accomadation .cards {
-    
+#accomodation .card {
+    border: solid 1px #DEEBFF;
+    padding: 5px;
+    min-width: 350px;
 }
+
+/*Activités*/
+
+#activities {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin-left: 20px;
+}
+
+.card-image_2{
+    max-height: 150px;
+    width: 100%;
+  
+}
+.card-image_2 img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+
+/*Footer*/
+
+footer{
+ 
+    display: flex;
+    flex-direction: column;
+}
+
 }
 
