@@ -41,6 +41,8 @@ h2{
     font-size: large;
 }
 
+
+
 header{
     display: flex;
     flex-direction: row;
@@ -53,12 +55,13 @@ header #logo{
     justify-content: center;
 }
 
+/*Header*/
+
 
 header nav{
     display: flex;
     flex: 1;
     justify-content:flex-end;
-
 }
 
 header nav ul{
@@ -81,22 +84,31 @@ header nav li:hover{
     border-top: 2px solid blue ;
 }
 
+#container h1{
+    font-size: x-large;
+
+}
+
 /* Formulaire de recherche*/
 
 .search{
-
     width:380px;
     height:50px;
     display:flex;
     flex-direction:row;
     justify-content: center;
     align-items: center; 
-    margin-top:50px;
+    margin-top:20px;
 }
 
-.search i
+.search i{
+    color: black;
+}
 
-{display: none;}
+.search button i
+{
+    display: none;
+}
 
 .search .icon{
     height:100%;
@@ -136,25 +148,24 @@ header nav li:hover{
 
 /*Filtres*/
 
-#filter h2 {
-    font-weight: 900;
-    font-size: large;
-}
-
 i{
    color:#0065FC;
 }
 
-#filter-type{
+#filter{
     margin-top:20px;
-    width: 70%;
-    height: 100%;
-    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#filter-type{
+ 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
 }
-
 
 .circle{
     width:50px;
@@ -183,43 +194,32 @@ i{
       font-weight: 700;
   }
 
-
-#money
-{
+#money{
     height: 100%;
     display: flex;
     flex: 1;
-    justify-content: center;
-    align-items: center;
 }
 
 #family{
-    
     height: 100%;
     display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;  
+    flex: 1; 
 }
 
 #love{
     height: 100%;
     display: flex;
     flex: 1;
-    justify-content: center;
-    align-items: center;
 }
 
 #pet{
     height: 100%;
     display: flex;
     flex: 1;
-    justify-content: center;
-    align-items: center; 
+    min-width: fit-content; 
 }
 
 #information{
-
     display: flex;
     align-items: center;
     padding-top: 15px;
@@ -262,23 +262,21 @@ section {
 #accomodation .cards {
     display:flex;
     flex-wrap: wrap;
-    gap: 20px;
-    row-gap: 20px;
+    gap: 15px;
 }
 
 #accomodation .cards .card{
-    width: calc(33%-6px);
+    width: calc(33%-10px);
 }
 
-#accomodation h2{
-    font-weight: 700;
-    font-size:x-large;
+#accomodation p{
+    padding-top: 20px;
+    font-size: large
 }
 
 /*Cartes*/
 
 .card{
-    padding-left: 5px;
     border-radius: 20px;
     background-color:#fff;
     box-sizing: border-box;
@@ -297,7 +295,7 @@ section {
 }
 
 .card-image img{
-    max-height: 100px;
+    max-height: 150px;
     width: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -305,7 +303,7 @@ section {
     transition: transform .1s;
 }
 
-.card-image img:hover{
+.card:hover{
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
@@ -328,7 +326,6 @@ section {
     border-radius: 20px;
  }
 
-
  #aside-title{
     display: flex;
     flex-direction: row;
@@ -343,6 +340,10 @@ section {
     font-size:x-large;
  }
 
+ #aside i{
+    color: black;
+}
+
 #popular {
     display: flex;
     flex-direction: column;
@@ -352,26 +353,16 @@ section {
     height: 100%;
     width: 100%;
     align-items: center;
-    background-color: #0065FC;
 }
 
-
-
 #popular .card{
-   width: 100%;
-   height : 100%; 
-   display: flex;
-   flex-direction: row;
-   max-width: 400px;
-   min-width: 250px;
-   max-height: 200px;
-   background-color: red;
+
+    
 }
 
 #popular .card .infos{
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 #popular .card .rating {
@@ -382,15 +373,11 @@ section {
 }
 
 #popular .card img {
-  
     height: 100%;
-    width: 120px;
+    width: 100%;
     object-fit: cover;
-    height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: blueviolet;
-    
 }
 
 
@@ -401,10 +388,10 @@ section {
     display: flex;
     flex-direction: row; 
     justify-content: space-between; 
-    flex-wrap: no-wrap; 
+    flex-wrap:nowrap; 
     gap: 20px;
-    height: 500px;
     width: 100%;
+    height: 100%;
 }
 
 .port{
@@ -413,10 +400,8 @@ section {
     flex-direction: column;
     align-items: flex-start;
     flex: 25%;
-    height: 100%;
+    min-height: 100%;
     border-radius: 20px;
-    border: solid 1px grey;
-    background-color:#fff;
     box-sizing: border-box;
     border: solid 1px #F2F2F2;
 }
@@ -434,7 +419,7 @@ section {
 
 .pomegues{
     display: flex;
-    flex: 1;
+    flex: 25%;
     border-radius: 20px;
     border: solid 1px #F2F2F2;
     overflow: hidden;
@@ -443,7 +428,7 @@ section {
 
 .frioul{
     display: flex;
-    flex: 1;
+    flex: 25%;
     border-radius: 20px;
     border: solid 1px #F2F2F2;
     overflow: hidden;
@@ -455,7 +440,7 @@ section {
     flex-direction: column;
     align-items: flex-start;
     flex: 25%;
-    height: 100%;
+    min-height: 100%;
     border-radius: 20px;
     border: solid 1px #F2F2F2;
     background-color:#fff;
@@ -469,8 +454,6 @@ section {
     gap: 20px;
     min-width: 0;
     min-height: 0;
-    overflow: hidden;
-    a
 }
 
 .dame{
@@ -480,15 +463,17 @@ section {
     border: solid 1px #F2F2F2;
     overflow: hidden;
     flex-direction: column;
+  
 }
 
 .parc{
     display: flex;
-    flex: 1;
+    flex: 25%;
     border-radius: 20px;
     border: solid 1px #F2F2F2;
     overflow: hidden;
     flex-direction: column;
+ 
 }
 
 /* Cartes activités*/
@@ -506,16 +491,15 @@ section {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     object-fit: cover;
-    background-color: aqua;
 }
-.card-info_2 {
-    width: 100%;
+
+ .card-info_2 {
+   width: 100%;
    height: 40px;
    display: flex;
    align-items: center;
    padding-left: 10px;
 }
-
 
 /*Footer*/
 
@@ -562,79 +546,47 @@ footer li {
     list-style-type: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Règles CSS pour Mobiles */
 
 @media screen and (max-width: 768px) 
 
 {
-    #container {
-        margin: 0px;
-    }
-
-    #container h1{
+#container {
         margin-left: 20px;
     }
 
-    #container p {
-        margin-left: 20px;
-    }
 
-    header{
+header{
         height: 150px;
         display: flex; 
         flex-direction: column;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
+        max-width: fit-content;
 }
-    
-    header #logo{
+header #logo{
         width: 100%;
         height: 100px;
-        background-color: greenyellow;
-       
-    }
-
-    header #logo img{
-        background-color: red;
-      
-    }
-    
-    header nav {
+}
+header nav {
         flex: 1;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         height: 100%;
         width: 100%;
-        background-color: aqua;
-    
     }
 
-    header nav ul {
+header nav ul {
             display: flex;
             flex-direction: row;
             margin: 0;
             padding: 0;
             list-style-type: none;
-            height: 100%;
-            
-        }
-    header nav li{
+            height: 100%;    
+    }
+header nav li{
        
         height: 100%;
         display: flex;
@@ -645,24 +597,22 @@ footer li {
         box-sizing: border-box;
         cursor:pointer;
         border-bottom: solid 2px #F2F2F2;
-    }
+}
     
-    header nav li:hover {
+header nav li:hover {
         border-bottom: 2px solid blue;
         border-top-style :none;
-    }
+}
     
 /*search bar*/
 
-.search
-{
-    margin-left: 20px;
-
-}
-.search i {
+.search .icon {
     display: flex;
     justify-content: center;
-    color: #fff;
+    color:black ;
+}
+.search button i {
+    color: white;
 }
 
 .search button {
@@ -674,24 +624,22 @@ footer li {
     display: none;
 }
 
-/*Filter*/
-
-#filter {
-    margin-left: 20px;
+.search button i{
+    display: block;
+    color: whit;
 }
 
+/*Filter*/
+
 #filter-type {
-    width: 100%;
-    height: 100%;
+
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    
+    width: 100%;
 }
 
 #information {
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 /*Section hébergements et les plus populaires*/
@@ -699,34 +647,21 @@ footer li {
 section {
     display: flex;
     flex-direction: column-reverse;
+    row-gap: 0px;
 }
 
 #aside {
-  border-radius: 0px;
-   padding: 10px;
+   border-radius: 0px;
+   padding: 20px;
    width: 100%;
+   height: 100%;
+}
 
-}
-#popular {
-   row-gap: 10px;
-   width: 100%;
-}
 #popular .card{
-    
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 80%;
+    align-items: flex-start;
     height: 100%;
-}
-
-#popular .infos{
-    background-color: yellow; 
-}
-
-#popular .card-image{
-    background-color: green;
-
 }
 
 #aside i {
@@ -736,15 +671,17 @@ section {
 #accomodation{
     background :none;
     display: flex;
-    flex: 1;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
 }
 
 #accomodation .card {
     border: solid 1px #DEEBFF;
     padding: 5px;
-    min-width: 350px;
+    width: 100%;
 }
 
 /*Activités*/
@@ -752,30 +689,69 @@ section {
 #activities {
     display: flex;
     flex-direction: column;
-    max-width: 350px;
-    margin-left: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+#col_1{
+    min-width: fit-content;
+    min-height: fit-content;
+  
+}
+
+#col_2{
+    min-width: fit-content;
+    min-height: fit-content;
+   
 }
 
 .card-image_2{
-    max-height: 150px;
-    width: 100%;
-  
+    height:100%
+    width: 100%; 
 }
+
 .card-image_2 img {
     width: 100%;
     object-fit: cover;
-
 }
 
-
-
+.card-info_2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 /*Footer*/
 
 footer{
- 
+
     display: flex;
     flex-direction: column;
 }
 
 }
 
+/* Regles CSS pour tablettes*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+#accomodation {
+    width: fit-content;
+    flex: 50%;
+}
+
+#aside {
+    display: flex;
+    flex: 50%;
+    height: fit-content;
+}
+
+
+
+
+
+
+}
